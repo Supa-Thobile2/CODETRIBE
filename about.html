@@ -1,107 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- STYLING -->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        section::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
+    <!-- STYLING -->
 
-    </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
 </head>
 <body>
+    <!-- HEADER -->
 
-     <!-- HEADER -->
-    <header>
 
-        <img src="images/Logo - ID Sound Duct-18.png" style =" float: left; width: 10%; padding-top: 0;"/>
-        
-        <nav style="float: right;">
-            <a href="index.html">Home</a>
-            <a href="#">About Me</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+    
+        <div class="header">
 
+            
+                
+            
+    
+            
+                
+            <nav>
+                <ul class="logo">
+                    <li ><img src="images/Logo - ID Sound Duct-18.png" width="30px"/></li>
+                </ul>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li> <a href="#">Contact Me</a></li>
+                </ul>
+                
+                
+                
+               
+            </nav>
+    
+            
+            
+        </div>
+       
+
+    
 
     <!-- MAIN -->
-    <main>
-        <img src="images/Logo - ID Sound Duct-18.png"/>
+
+
+   
+
+        <div class="main">
+
+            <div class="welcome-image">
+               <img src="images/Logo - ID Sound Duct-18.png"/>
+            </div>
+
+            <div class="content">
+                <section>
+
+
+                    <article class="experience" >
+                    
+                        <h1>EXPERIENCE</h1>
+                        <ul style="list-style: none;">
+                            <li>IT varsity | Nov 2020–Nov 2021 | Information Technology E-tutor
+                                <ul style="list-style: none;">
+                                    <li><h3>TECHNICAL SUPPORT</h3></li>
+                                      <li>Code debugging</li>
+                                      <li>GitHub queries</li>
+                                      <li>Web Development</li>
+                                </ul>
+                            </li><br/>
+                            <li style="list-style: none;">ZAOI | AUG 2019–AUG 2020 | Information Technology Learnership
+                              <ul style="list-style: none;">
+                                  <li><h3>FULLSTACK DEVELOPMENT</h3></li>
+                                    <li>HTML,CSS AND JAVASCRIPT</li>
+                                    <li>MEANSTACK</li>
+                              </ul>
+                          </li><br/>
+                            
+                        </ul>
+                      </article>
+
+
+                    <article class="education">
+                        <h1 style="text-align: center;">EDUCATION</h1>
+                        <li  style="list-style: none;">IT varsity | Nov 2020–Nov 2021 
+                            <ul style="list-style: none;">
+                                <li style="list-style: none;"><h3>NATIONAL CERTIFICATE: SYSTEMS DEVELOPMENT</h3></li>
+                                  <li>NQF Level: 5</li>
+                                  <li>SAQA ID: 48872</li>
+                            </ul>
+                        </li><br/>
         
-        <section style="padding: 30px;">
-            <article style ="float: right; width: 30%;">
-                <h1 style="text-align: center;">EDUCATION</h1>
-                <li>IT varsity | Nov 2020–Nov 2021 
-                    <ul>
-                        <li><h3>nATIONAL CERTIFICATE: SYSTEMS DEVELOPMENT</h3></li>
-                          <li>NQF Level: 5</li>
-                          <li>SAQA ID: 48872</li>
-                    </ul>
-                </li><br/>
+                        <li style="list-style: none;">TSIBA IGNITION ACADEMY | Nov 2020–Nov 2021 
+                            <ul style="list-style: none;">
+                                <li><h3>PROJECT MANAGEMENT</h3></li>
+                                  <li>NQF Level: 4</li>
+                                  <li>SAQA ID: 10140</li>       
+                            </ul>
+                        </li><br/>
+        
+                        <li style="list-style: none;">Google | AUG 2019
+                            <ul style="list-style: none;">
+                                <li><h3>Fundamentals of Digital Markerting</h3></li>
+                                  <li>Online Advertising</li>
+                                  <li>Promote Business with Content</li> 
+                                  <li>Customer Segmentation and Pospecting</li>           
+                            </ul>
+                        </li>
+        
+                 
+                    </article>
+                    
+                    
+                    
+                    
+                    
+                 
+                </section>
 
-                <li>TSIBA IGNITION ACADEMY | Nov 2020–Nov 2021 
-                    <ul>
-                        <li><h3>PROJECT MANAGEMENT</h3></li>
-                          <li>NQF Level: 4</li>
-                          <li>SAQA ID: 10140</li>       
-                    </ul>
-                </li><br/>
+            </div>
+        </div>
+        
+       
 
-                <li>TSIBA IGNITION ACADEMY | AUG 2019
-                    <ul>
-                        <li><h3>Fundamentals of Digital Markerting</h3></li>
-                          <li>Online Advertising</li>
-                          <li>Promote Business with Content</li> 
-                          <li>Customer Segmentation and Pospecting</li>           
-                    </ul>
-                </li>
-
-         
-            </article>
-            
-            
-            <article style="float: left;  width: 70%; height: 400px;">
-            
-              <h1 style="text-align: center;">EXPERIENCE</h1>
-              <ul>
-                  <li>IT varsity | Nov 2020–Nov 2021 | Information Technology E-tutor
-                      <ul>
-                          <li><h3>TECHNICAL SUPPORT</h3></li>
-                            <li>Code debugging</li>
-                            <li>GitHub queries</li>
-                            <li>Web Development</li>
-                      </ul>
-                  </li><br/>
-                  <li>ZAOI | AUG 2019–AUG 2020 | Information Technology Learnership
-                    <ul>
-                        <li><h3>FULLSTACK DEVELOPMENT</h3></li>
-                          <li>HTML,CSS AND JAVASCRIPT</li>
-                          <li>MEANSTACK</li>
-                    </ul>
-                </li><br/>
-                  
-              </ul>
-            </article>
-        </section>
+        
+       
 
 
-    </main>
+    
 
-    <!-- FOOTER -->
-    <footer style="padding: 10px; text-align: center; width: 100%;">
-        <p style="display: inline; padding: 10px;">Author: Thobile Nontenja</p>
-        <p style="display: inline; padding: 10px;">Email: <a href="mailto:thobilenontenja198@gmail.com" target="blank">thobilenontenja198@gmail.com</a></p>
-        <p style="display: inline; padding: 10px;">website: <a href="https://thobile.nontenja.itvarsitystudent.org/" target="blank">https://thobile.nontenja.itvarsitystudent.org/</a></p>
-    </footer>
+     <!-- FOOTER -->
+     
+     <div class="footer">
+        <footer style="padding: 10px; text-align: center; width: 100%;">
+            <p style="display: inline; padding: 10px;">Author: Thobile Nontenja</p>
+            <p style="display: inline; padding: 10px;">Email: <a href="mailto:thobilenontenja198@gmail.com" target="blank">thobilenontenja198@gmail.com</a></p>
+            <p style="display: inline; padding: 10px;">website: <a href="https://thobile.nontenja.itvarsitystudent.org/" target="blank">https://thobile.nontenja.itvarsitystudent.org/</a></p>
+        </footer>
+
+     </div>
+
+   
     
 </body>
 </html>

@@ -4,73 +4,101 @@
     <!-- STYLING -->
 
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        section::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
 </head>
 <body>
     <!-- HEADER -->
 
 
-    <header style="text-align: center; padding: 30px; ">
+    
+        <div class="header">
 
-        <img src="images/Logo - ID Sound Duct-18.png" style =" float: left; margin: 0; padding: 0; width: 10%; height: 5%;"/>
-        
-        <nav style="float: right;">
-            <a href="#">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
-    </header>
+            
+                
+            
+    
+            
+                
+            <nav>
+                <ul class="logo">
+                    <li ><img src="images/Logo - ID Sound Duct-18.png" width="30px"/></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li> <a href="contact.html">Contact Me</a></li>
+                </ul>
+                
+                
+                
+               
+            </nav>
+    
+            
+            
+        </div>
+       
+
+    
 
     <!-- MAIN -->
 
 
    
-    <main style="padding: 20px; margin-top: 20px;">
+
+        <div class="main">
+            <div class="welcome-video">
+                <video style="padding: 30px;" width="100%" controls>
+                    <source src="video/videoplayback.mp4" type="video/mp4">
         
-        <video style="padding: 30px;" width="100%" controls>
-            <source src="video/videoplayback.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="content">
+                <section>
+                    
+                    
+                    
+                    <article >
+                    
+                      <h1>About Me</h1>
+                      <p>My name is Thobile Nontenja . I am driven, ambitious, always up for a challenge and always out looking for my next opportunity. I am an enthusiastic, passionate person driven by targeted goals ans very optimistic. I am persitent, take initiative and a team player yet I floursh as an individual. I am fast learner and possess a willingness to learn from others.</p>
+                      <p> studied towards a Diploma in Systems Development with an online university that is based in Durban (IT varsity).. I am currently workin at IT varsity as junior developer and have been part of the technical team and currently an online tutor. The program has allowed me to gain the neccessary experience to navigate the work environment and also integrate my theoritical training in solving real life problems.</p>
+                      <button class="btn"><a href="about.html">Read More...</a></button>
+                      
+                    </article>
 
-          Your browser does not support the video tag.
-          </video>
+                    <img src="images/T.jpg" />
+                </section>
+
+            </div>
+        </div>
+        
+       
 
         
-        <section style="padding: 30px;">
-            <img src="images/T.jpg" style ="float: right; width: 30%; height: 300px;"/>
-            
-            
-            <article style="float: left;  width: 70%; height: 300px;">
-            
-              <h1 style="text-align: center;">About Me</h1>
-              <p>My name is Thobile Nontenja . I am driven, ambitious, always up for a challenge and always out looking for my next opportunity. I am an enthusiastic, passionate person driven by targeted goals ans very optimistic. I am persitent, take initiative and a team player yet I floursh as an individual. I am fast learner and possess a willingness to learn from others.</p>
-              <p> studied towards a Diploma in Systems Development with an online university that is based in Durban (IT varsity).. I am currently workin at IT varsity as junior developer and have been part of the technical team and currently an online tutor. The program has allowed me to gain the neccessary experience to navigate the work environment and also integrate my theoritical training in solving real life problems.</p>
-              <button style="padding: 10px; margin: 20px;"><a href="about.html">Read More...</a></button>
-              
-            </article>
-        </section>
+       
 
 
-    </main>
+    
 
      <!-- FOOTER -->
+     
+     <div class="footer">
+        <footer style="padding: 10px; text-align: center; width: 100%;">
+            <p style="display: inline; padding: 10px;">Author: Thobile Nontenja</p>
+            <p style="display: inline; padding: 10px;">Email: <a href="mailto:thobilenontenja198@gmail.com" target="blank">thobilenontenja198@gmail.com</a></p>
+            <p style="display: inline; padding: 10px;">website: <a href="https://thobile.nontenja.itvarsitystudent.org/" target="blank">https://thobile.nontenja.itvarsitystudent.org/</a></p>
+        </footer>
 
-    <footer style="padding: 10px; text-align: center; width: 100%;">
-        <p style="display: inline; padding: 10px;">Author: Thobile Nontenja</p>
-        <p style="display: inline; padding: 10px;">Email: <a href="mailto:thobilenontenja198@gmail.com" target="blank">thobilenontenja198@gmail.com</a></p>
-        <p style="display: inline; padding: 10px;">website: <a href="https://thobile.nontenja.itvarsitystudent.org/" target="blank">https://thobile.nontenja.itvarsitystudent.org/</a></p>
-    </footer>
+     </div>
+
+   
     
 </body>
 </html>

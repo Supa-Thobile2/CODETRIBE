@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling*/
+
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+nav{
+    background-color: darkgray;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: silver;
+
+}
+
+
+ /* About  me page styling*/ 
+ article{
+    background: gainsboro;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+
+article h1{
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+
+.education{
+    width: 70%;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+        text-align: left;
+    font-family: monospace;
+            
+  }
+
+  
+
+  .experience{
+      width: 30%;
+      font-family: monospace;
+      
+      padding: 2px;
+      margin: 2px;
+  }
+
+
+  .experience li{
+    font-family: monospace;
+    padding: 2px;
+    margin: 2px;
+}
+
+.experience ul{
+    font-family: cursive;
+    
+    padding: 2px;
+    margin: 2px;
+}
+.education{
+      width: 70%;
+      font-family: monospace;
+      
+      padding: 2px;
+      margin: 2px;
+
+}
+
+.education li{
+    font-family: monospace;
+    padding: 2px;
+    margin: 2px;
+}
+
+.education ul{
+    font-family: cursive;
+    
+    padding: 2px;
+    margin: 2px;
+}
+
+ 
+
+/*Media query*/
+
+@media screen and (min-width: 768px){
+/* Header styling*/
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+  nav{
+      display: flex;
+      justify-content: space-between;
+  }
+    
+}
+
+
+/* Main styling*/
+
+.welcome-image{
+    width: 100%;
+    background: gainsboro;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.content{
+    
+    margin: 10px;
+}
+
+article{
+    background: gainsboro;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+
+article h1{
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    
+    background: lightgrey;
+}
+
+
+
+.welcome-video{
+    width: 100%;
+    background: gainsboro;
+    margin: 0 auto;
+    
+    
+}
+
+
+/*Main styling*/
+    
+  .content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+  }
+  .content article{
+      width: 70%;
+      height: 500px;
+  }
+
+  .content img{
+    width: 30%;
+    height: 500px;
+   
+  }
+
+  section{
+    display: flex;
+    flex: 1 1 0;
+}
+
+  section p{
+      font-family: monospace;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 2.5;
+     
+  }
+
+  section .btn{
+    padding: 10px;
+    margin: 20px;
+    background-color: darkslategray;
+    box-sizing: border-box;
+    
+    
+    
+
+  }
+
+  section .btn a{
+   
+    text-decoration: none;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    
+
+  }
+
+
+
+
+
+
+
+/* Contact page styling*/
+.welcome-image{
+    width: 100%;
+    background: gainsboro;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.content{
+    
+    margin: 10px;
+}
+
+article{
+    background: gainsboro;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+
+article h1{
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+
+.form{
+    width: 70%;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+    background-color: honeydew;
+    text-align: left;
+    font-family: monospace;
+            
+  }
+
+  .form label, input{
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  .contact{
+      font-family: monospace;
+      font-weight: 700;
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .contact li{
+    font-family: monospace;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+}
+
+ 
+
+/*Footer styling*/
+
+
+  .footer{
+      display: flex;
+      background: darkgray;
+  }
