@@ -4,71 +4,192 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #14213d;
+}
+
+
+/************************************* Header styling***************************************/
+
+
+
 /* Header styling*/
 
 
 .header{
     width: 100%;
     margin: 0 auto;
+    border: 2px solid black;
+    
 }
 
 
 nav{
-    background-color: darkgray;
+    background-color: #003566;
+}
+nav img{
+    background-color: #fff;
+    height: 40px;
+    width: 60px;
 }
 
 nav ul{
     list-style-type: none;
     padding: 10px;
     justify-content: space-between;
+
+    
 }
 
 nav a{
+    font-family: calibri, sans-serif;
+    
     text-decoration: none;
     text-transform: uppercase;
     padding: 0;
     text-align: center;
-    color: #fff;
+    color: #cfdbd5;
     display: block;
     padding: 10px;
 }
 
 nav a:hover{
-    background-color: silver;
+    background-color: #028090;
+    border-radius: 15px 15px 15px 15px;
 
 }
 
 
- /* About  me page styling*/ 
- article{
-    background: gainsboro;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
+
+
+
+/*Main styling*/
+    
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.content article{
+    width: 70%;
+    height: 500px;
+    color: black;
+   
+    border: 2px solid blue;
+}
+
+.content img{
+  width: 30%;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  
+ 
+}
+
+
+.welcome-video{
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: #14213d ;
+    
+    
+}
+
+.welcome-video video{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+/*All section styling*/
+
+section{
+  display: flex;
+  padding: 20px;
+  animation-name: aniS;
+  animation-duration:  8s;
+ 
+ 
+}
+
+@keyframes aniS {
+    0%{background-color: white; border-radius: 50% 50% 50% 50%}
+    25%{background-color: yellow; left: 300px; top: 0px;}
+    50%{background-color: white;}
+    75%{background-color: yellowgreen;}
+    100%{background-color: white;}
+    
+}
+
+section p{
+    font-family: calibri, sans-serif;
+    font-style: oblique;
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 35px;
+    letter-spacing: 1;
+    word-spacing: 0.5;
+    text-align: start;
+    color: #cfdbd5;
    
 }
 
-article h1{
-    text-align: center;
-    font-family: monospace;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 20px;
+section .btn{
+  padding: 10px;
+  margin: 20px;
+  background-color: darkslategray;
+  box-sizing: border-box;
 
 }
 
-
-.education{
-    width: 70%;
-    height: 400px;
-    padding: 10px;
-    margin: 10px;
-        text-align: left;
-    font-family: monospace;
-            
-  }
-
+section .btn a{
+ 
+  text-decoration: none;
+  font-family: calibri, sans-serif;
+  font-style: oblique;
+  text-decoration: none;
   
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  
+  transition-duration: 3s;
+
+}
+
+section .btn:hover{
+    background-color: black;
+    
+    border-radius: 100%;
+}
+
+
+/************************************* About Me ***************************************/
+ /* About  me page styling*/ 
+ article{
+    
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+   
+}
+
+
+
 
   .experience{
       width: 30%;
@@ -76,24 +197,30 @@ article h1{
       
       padding: 2px;
       margin: 2px;
+      list-style-type: none;
   }
 
 
   .experience li{
-    font-family: monospace;
+    font-family:  calibri;
     padding: 2px;
     margin: 2px;
+    list-style-type: none;
+    display: block;
+    color: red;
 }
 
 .experience ul{
-    font-family: cursive;
+    font-family: calibri, sans-serif;;
+    list-style-type: none;
     
     padding: 2px;
     margin: 2px;
 }
 .education{
       width: 70%;
-      font-family: monospace;
+      font-family: calibri, sans-serif;;
+      list-style-type: none;
       
       padding: 2px;
       margin: 2px;
@@ -101,17 +228,163 @@ article h1{
 }
 
 .education li{
-    font-family: monospace;
+    font-family: calibri, sans-serif;;
+    list-style-type: none;
     padding: 2px;
     margin: 2px;
+    display: block;
+    color: red;
 }
 
 .education ul{
-    font-family: cursive;
+    font-family: calibri, sans-serif;;
+    list-style-type: none;
     
     padding: 2px;
     margin: 2px;
 }
+
+
+
+/************************************* Contact Me***************************************/
+
+
+/* Contact page styling*/
+.welcome-image{
+    width: 100%;
+    
+    margin:auto;
+    
+    
+    
+}
+
+.welcome-image img{
+    width: 100%;
+    height: 350px;
+    background: white;
+    margin: 0 auto;
+    align-self: center;
+    
+}
+
+
+
+
+article{
+   
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+   
+}
+
+article h1{
+    font-family: cursive;
+    
+    text-align: center;
+    
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+
+.form{
+    width: 800px;
+    
+    
+    margin: auto;
+    
+    border-radius: 15px 15px 15px 15px;
+    
+    
+    
+    height: 400px;
+    
+    text-align: left;
+    font-family: calibri, sans-serif;
+    font-style: oblique;
+            
+  }
+
+  .form label, input,textarea{
+    
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      
+  }
+
+  .form label{
+    text-transform: capitalize;
+    margin-left: 2px;
+    
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    
+}
+
+
+
+  .form input, textarea{
+      border: 2px solid black;
+      background-color: #fff;
+     
+      margin: 0.3rem 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+     
+     
+  }
+
+.contact{
+      border-radius: 15px 15px 15px 15px;
+      font-family: calibri, sans-serif;
+      font-weight: 700;
+      margin: auto 5px;
+      height: 400px;
+     
+     
+  }
+.contact li{
+    font-family: calibri, sans-serif;
+    font-style: oblique;
+    
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact ul{
+    font-family: calibri, sans-serif;
+
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/************************************* Footer***************************************/
+
+.footer{
+    display: flex;
+    background-color: #003566;
+    padding: 10px;
+    margin: 0 auto;
+    
+   
+}
+.footer ul,li{
+    display: inline-block;
+}
+
 
  
 
@@ -132,11 +405,11 @@ article h1{
 }
 
 
-/* Main styling*/
+/* All welcome images styling*/
 
 .welcome-image{
-    width: 100%;
-    background: gainsboro;
+    width: 40%;
+   
     margin: 0 auto;
     
     
@@ -144,180 +417,30 @@ article h1{
 
 
 
-.content{
-    
-    margin: 10px;
-}
 
-article{
-    background: gainsboro;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-   
-}
 
-article h1{
-    text-align: center;
-    font-family: monospace;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 20px;
 
-}
+/* Article heading styling*/ 
+
+
 
 
 .main{
     width: 100%;
     margin: 0 auto;
     
-    background: lightgrey;
+  
 }
 
 
 
-.welcome-video{
-    width: 100%;
-    background: gainsboro;
-    margin: 0 auto;
-    
-    
-}
-
-
-/*Main styling*/
-    
-  .content{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      
-  }
-  .content article{
-      width: 70%;
-      height: 500px;
-  }
-
-  .content img{
-    width: 30%;
-    height: 500px;
-   
-  }
-
-  section{
-    display: flex;
-    flex: 1 1 0;
-}
-
-  section p{
-      font-family: monospace;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 2.5;
-     
-  }
-
-  section .btn{
-    padding: 10px;
-    margin: 20px;
-    background-color: darkslategray;
-    box-sizing: border-box;
-    
-    
-    
-
-  }
-
-  section .btn a{
-   
-    text-decoration: none;
-    font-family: monospace;
-    text-decoration: none;
-    padding: 0;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    
-
-  }
 
 
 
 
 
-
-
-/* Contact page styling*/
-.welcome-image{
-    width: 100%;
-    background: gainsboro;
-    margin: 0 auto;
-    
-    
-}
-
-
-
-.content{
-    
-    margin: 10px;
-}
-
-article{
-    background: gainsboro;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-   
-}
-
-article h1{
-    text-align: center;
-    font-family: monospace;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 20px;
-
-}
-
-
-.form{
-    width: 70%;
-    height: 400px;
-    padding: 10px;
-    margin: 10px;
-    background-color: honeydew;
-    text-align: left;
-    font-family: monospace;
-            
-  }
-
-  .form label, input{
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-  }
-
-  .contact{
-      font-family: monospace;
-      font-weight: 700;
-      padding: 10px;
-      margin: 10px;
-  }
-
-  .contact li{
-    font-family: monospace;
-    font-weight: 700;
-    padding: 10px;
-    margin: 10px;
-}
 
  
 
 /*Footer styling*/
 
-
-  .footer{
-      display: flex;
-      background: darkgray;
-  }
