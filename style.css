@@ -1,3 +1,6 @@
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +8,12 @@
 }
 
 body{
-    background-color: #14213d;
+    background-color: rgb(10, 25, 48);
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 
 /************************************* Header styling***************************************/
@@ -18,19 +25,34 @@ body{
 
 .header{
     width: 100%;
+    position: fixed;
+    z-index: 10;
     margin: 0 auto;
-    border: 2px solid black;
+    border: 2px solid #3b6f72;
+    
     
 }
 
 
 nav{
-    background-color: #003566;
+    background-color: rgba(10, 25, 48, 0.8);
+   
 }
 nav img{
     background-color: #fff;
     height: 40px;
     width: 60px;
+    animation-name: pop;
+    animation-duration: 10s;
+    
+}
+
+@keyframes pop {
+    0%{background-color: #a4c3b2;}
+    25%{background-color: green;}
+    50%{background-color: red;}
+    75%{background-color: #3c6e71;}
+    100%{background-color: #284b63;}
 }
 
 nav ul{
@@ -48,7 +70,7 @@ nav a{
     text-transform: uppercase;
     padding: 0;
     text-align: center;
-    color: #cfdbd5;
+    color: #f9f9f9;
     display: block;
     padding: 10px;
 }
@@ -56,6 +78,8 @@ nav a{
 nav a:hover{
     background-color: #028090;
     border-radius: 15px 15px 15px 15px;
+    animation-name: pop;
+    animation-duration: 10s;
 
 }
 
@@ -68,8 +92,9 @@ nav a:hover{
 .content{
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding-top: 5px;
     margin: 0 auto;
+   
     
     
 }
@@ -80,7 +105,7 @@ nav a:hover{
     width: 70%;
     height: 500px;
     color: black;
-   
+    margin: 0 auto;
     border: 2px solid blue;
 }
 
@@ -96,10 +121,11 @@ nav a:hover{
 
 .welcome-video{
     width: 100%;
-    background: white;
+    background:  rgba(10, 25, 48, 1);
     margin: 0 auto;
     border: 2px solid black;
-    background-color: #14213d ;
+    padding-top: 34px;
+    
     
     
 }
@@ -119,12 +145,12 @@ nav a:hover{
 section{
   display: flex;
   padding: 20px;
-  animation-name: aniS;
-  animation-duration:  8s;
+ /* animation-name: aniS;
+  animation-duration:  8s;*/
  
  
 }
-
+/**
 @keyframes aniS {
     0%{background-color: white; border-radius: 50% 50% 50% 50%}
     25%{background-color: yellow; left: 300px; top: 0px;}
@@ -133,7 +159,7 @@ section{
     100%{background-color: white;}
     
 }
-
+**/
 section p{
     font-family: calibri, sans-serif;
     font-style: oblique;
@@ -143,14 +169,14 @@ section p{
     letter-spacing: 1;
     word-spacing: 0.5;
     text-align: start;
-    color: #cfdbd5;
+    color: #f0f0f0;
    
 }
 
 section .btn{
   padding: 10px;
   margin: 20px;
-  background-color: darkslategray;
+  background-color: #00ffbb;
   box-sizing: border-box;
 
 }
@@ -193,7 +219,7 @@ section .btn:hover{
 
   .experience{
       width: 30%;
-      font-family: monospace;
+      font-family: calibri;
       
       padding: 2px;
       margin: 2px;
@@ -203,17 +229,30 @@ section .btn:hover{
 
   .experience li{
     font-family:  calibri;
+    
     padding: 2px;
     margin: 2px;
     list-style-type: none;
     display: block;
-    color: red;
+    
+}
+
+
+.experience li h3{
+    font-family:  calibri;
+    
+    padding: 2px;
+    margin: 2px;
+    text-decoration: underline;
+    
+    color: #ffffff;
 }
 
 .experience ul{
-    font-family: calibri, sans-serif;;
+   
+    font-family: calibri, sans-serif;
     list-style-type: none;
-    
+    color: #ffffff;
     padding: 2px;
     margin: 2px;
 }
@@ -228,12 +267,20 @@ section .btn:hover{
 }
 
 .education li{
-    font-family: calibri, sans-serif;;
+    font-family: calibri, sans-serif;
     list-style-type: none;
     padding: 2px;
     margin: 2px;
     display: block;
-    color: red;
+    color: #ffffff;
+}
+
+.education li h3{
+    font-family:  calibri;
+    
+    text-decoration: underline;
+    
+    color: #ffffff;
 }
 
 .education ul{
@@ -252,8 +299,9 @@ section .btn:hover{
 /* Contact page styling*/
 .welcome-image{
     width: 100%;
+    padding-top: 68px;
+    margin: 0 auto;
     
-    margin:auto;
     
     
     
@@ -262,8 +310,9 @@ section .btn:hover{
 .welcome-image img{
     width: 100%;
     height: 350px;
-    background: white;
+    background: #f0f0f0;;
     margin: 0 auto;
+    
     align-self: center;
     
 }
@@ -276,13 +325,13 @@ article{
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid #fff;
    
 }
 
 article h1{
-    font-family: cursive;
-    
+    font-family: calibri, sans-serif;
+    color: #f0f0f0;
     text-align: center;
     
     
@@ -292,10 +341,23 @@ article h1{
 
 }
 
+article h2{
+    font-family:  calibri, sans-serif;
+    
+    text-align: center;
+    
+    
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-bottom: 20px;
+    color: #f0f0f0;
+
+}
+
 
 .form{
     width: 800px;
-    
+    background-color: #fff;
     
     margin: auto;
     
@@ -323,7 +385,7 @@ article h1{
     text-transform: capitalize;
     margin-left: 2px;
     
-    color: black;
+    color: #f0f0f0;
     font-size: 18px;
     font-weight: 300;
     
@@ -332,7 +394,7 @@ article h1{
 
 
   .form input, textarea{
-      border: 2px solid black;
+      border: 2px solid #d3d3d3;
       background-color: #fff;
      
       margin: 0.3rem 0;
@@ -355,7 +417,7 @@ article h1{
 .contact li{
     font-family: calibri, sans-serif;
     font-style: oblique;
-    
+    color: #f0f0f0;
     font-weight: 700;
     padding: 10px;
     margin: 10px;
@@ -363,7 +425,7 @@ article h1{
 
 .contact ul{
     font-family: calibri, sans-serif;
-
+    color: #f0f0f0;
     font-weight: 700;
     padding: 10px;
     margin: 10px;
@@ -375,7 +437,9 @@ article h1{
 
 .footer{
     display: flex;
-    background-color: #003566;
+      
+    border: 2px solid #3b6f72;
+    background-color: rgba(10, 25, 48, 0.8);
     padding: 10px;
     margin: 0 auto;
     
@@ -407,10 +471,10 @@ article h1{
 
 /* All welcome images styling*/
 
-.welcome-image{
+/*.welcome-image{
     width: 40%;
    
-    margin: 0 auto;
+    margin: 0 auto;*/
     
     
 }
