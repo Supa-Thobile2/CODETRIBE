@@ -462,8 +462,16 @@ article h2{
    
 }
 
+.footer li i{
+    padding: 10px;
+    margin: 0 auto;
+    color: #f9f9f9;
+}
 
-
+.footer li i:hover{
+    background-color: #bac8e2;
+    border-radius: 10px 10px 10px 10px;
+}
 
 
  
