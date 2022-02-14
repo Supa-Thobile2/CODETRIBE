@@ -143,7 +143,7 @@ nav a:hover{
 /*All section styling*/
 
 section{
-  display: flex;
+ 
   
   padding-left: 40px;
   padding-right: 40px;
@@ -181,8 +181,9 @@ section p{
 section .btn{
   padding: 10px;
   margin: 20px;
-  background-color: #83bb21;
+  
   box-sizing: border-box;
+ 
 
 }
 
@@ -197,7 +198,7 @@ section .btn a{
   color: #bac8e2;
   padding: 10px;
   
-  transition-duration: 3s;
+  
 
 }
 
@@ -219,15 +220,28 @@ section .btn:hover{
    
 }
 
+.content-experience{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    margin: 0 auto;
 
+}
+
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    margin: 0 auto;
+
+}
 
 
   .experience{
       width: 30%;
       font-family: calibri;
       
-      padding: 2px;
-      margin: 2px;
+      
       list-style-type: none;
   }
 
@@ -235,8 +249,7 @@ section .btn:hover{
   .experience li{
     font-family:  calibri;
     
-    padding: 2px;
-    margin: 2px;
+    
     list-style-type: none;
     display: block;
     
@@ -246,8 +259,7 @@ section .btn:hover{
 .experience li h3{
     font-family:  calibri;
     
-    padding: 2px;
-    margin: 2px;
+    
     text-decoration: underline;
     
     color: #ffffff;
@@ -258,24 +270,20 @@ section .btn:hover{
     font-family: calibri, sans-serif;
     list-style-type: none;
     color: #ffffff;
-    padding: 2px;
-    margin: 2px;
+   
 }
 .education{
       width: 70%;
       font-family: calibri, sans-serif;;
       list-style-type: none;
-      
-      padding: 2px;
-      margin: 2px;
+     
 
 }
 
 .education li{
     font-family: calibri, sans-serif;
     list-style-type: none;
-    padding: 2px;
-    margin: 2px;
+    
     display: block;
     color: #ffffff;
 }
@@ -292,8 +300,7 @@ section .btn:hover{
     font-family: calibri, sans-serif;;
     list-style-type: none;
     
-    padding: 2px;
-    margin: 2px;
+    
 }
 
 
@@ -304,6 +311,7 @@ section .btn:hover{
 /* Contact page styling*/
 .welcome-image{
     width: 100%;
+    
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 68px;
@@ -316,7 +324,7 @@ section .btn:hover{
 
 .welcome-image img{
     width: 100%;
-    height: 350px;
+    
     background: #f0f0f0;;
     margin: 0 auto;
     
@@ -443,18 +451,19 @@ article h2{
 /************************************* Footer***************************************/
 
 .footer{
+    width: 100%;
     display: flex;
-    
+    text-align: center;
       
     background-color: rgba(4, 4, 6, 0.8);
-    padding: 10px;
-    margin: 0 auto;
     
+    margin: 0 auto;
+    color: #f0f0f0;
    
 }
-.footer ul,li{
-    display: inline-block;
-}
+
+
+
 
 
  
@@ -945,3 +954,23 @@ article h2{
 .footer ul,li{
     display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
