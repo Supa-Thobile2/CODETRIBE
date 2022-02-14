@@ -975,7 +975,7 @@ article h2{
         display: inline-block;
         padding: 10px;
         margin: 0 auto;
-        color: #f9f9f9;
+        color: #fff;
     }
     
     .footer li i:hover{
@@ -1078,7 +1078,7 @@ body{
 }
 nav{
     width: 100%;
-    display: block;
+    
     padding: 5px;
     margin: auto;
 }
@@ -1128,19 +1128,13 @@ nav a{
 
     .section-contact{
         width: 100%;
-        display: block;
+        
     }
 
-    .content{
-        display: block;
-    }
-
-    .section{
-        display: block;
-    }
+   
 
     .content-contact{
-        width: 400px;
+        width: 100%;
         box-sizing: border-box;
         margin: 0 auto;
     }
