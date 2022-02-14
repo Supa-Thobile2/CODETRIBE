@@ -873,7 +873,7 @@ article h2{
 
 .form{
     width: 800px;
-    background-color: #fff;
+    
     
     margin: auto;
     
@@ -950,19 +950,27 @@ article h2{
 
 
 /************************************* Footer***************************************/
-
 .footer{
+    width: 100%;
     display: flex;
-    
+    text-align: center;
       
     background-color: rgba(4, 4, 6, 0.8);
-    padding: 10px;
-    margin: 0 auto;
     
+    margin: 0 auto;
+    color: #f0f0f0;
    
 }
-.footer ul,li{
-    display: inline-block;
+
+.footer li i{
+    padding: 10px;
+    margin: 0 auto;
+    color: #f9f9f9;
+}
+
+.footer li i:hover{
+    background-color: #bac8e2;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
