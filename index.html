@@ -34,12 +34,8 @@
     <!-- MAIN -->
 
         <div class="main">
-            <div class="welcome-video">
-                <video style="padding: 30px;" width="100%" controls>
-                    <source src="video/videoplayback.mp4" type="video/mp4">
-        
-                  Your browser does not support the video tag.
-                  </video>
+            <div class="welcome-video" id="video">
+               
             </div>
 
             <hr style="transform: scale(0.5);"/>
@@ -48,10 +44,10 @@
                 <section> 
                     <article >
                     
-                      <h1>Thobile Nontenja</h1>
-                      <h2>I am an Aspirant Junior Developer</h2>
-                      <p>My name is Thobile Nontenja . I am driven, ambitious, always up for a challenge and always out looking for my next opportunity. I am an enthusiastic, passionate person driven by targeted goals ans very optimistic. I am persitent, take initiative and a team player yet I floursh as an individual. I am fast learner and possess a willingness to learn from others.</p>
-                      <p> studied towards a Diploma in Systems Development with an online university that is based in Durban (IT varsity).. I am currently workin at IT varsity as junior developer and have been part of the technical team and currently an online tutor. The program has allowed me to gain the neccessary experience to navigate the work environment and also integrate my theoritical training in solving real life problems.</p>
+                      <h1 id="article"></h1>
+                      <h2 id="articles"></h2>
+                      <p id="para1"></p>
+                      <p id="para2"></p>
                       <button class="btn" style="background-color: #284b63 ;"><a href="about.html">Read More...</a></button>
                       
                     </article>
@@ -66,20 +62,32 @@
      <!-- FOOTER -->
      
      <div class="footer">
-        <footer style="padding: 10px; text-align: center; width: 100%;">
-
-            <p style="display: block; padding: 5px;">Author: Thobile Nontenja
-               <ul>
-                   <li><a href="https://www.linkedin.com/in/thobile-nontenja-6a3735193/"><i class="fa-brands fa-linkedin"></i></a></li>
-                   
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                   
-                    <li><a href="mailto:thobilenontenja198@gmail.com"><i class="fa-solid fa-envelopes-bulk"></i></a></li>       
-                </ul>
-            </p>     
-        </footer>
+        
 
      </div>
+
+
+     <script>
+        document.getElementById("video").innerHTML =" <video style='padding: 30px;'width= '100%' controls><source src='video/videoplayback.mp4' type='video/mp4'> Your browser does not support the video tag.</video>";
+
+
+        document.getElementById("article").innerHTML ="Thobile Nontenja";
+
+        document.getElementById("articles").innerHTML ="I am an Aspirant Junior Developer";
+
+        document.getElementById("para1").innerHTML ="<p>My name is Thobile Nontenja . I am driven, ambitious, always up for a challenge and always out looking for my next opportunity. I am an enthusiastic, passionate person driven by targeted goals ans very optimistic. I am persitent, take initiative and a team player yet I floursh as an individual. I am fast learner and possess a willingness to learn from others</p>";
+
+         document.getElementById("para2").innerHTML ="<p> studied towards a Diploma in Systems Development with an online university that is based in Durban (IT varsity).. I am currently workin at IT varsity as junior developer and have been part of the technical team and currently an online tutor. The program has allowed me to gain the neccessary experience to navigate the work environment and also integrate my theoritical training in solving real life problems.</p>";
+
+
+        
+
+
+
+
+        
+    </script>
+
 
    
     
