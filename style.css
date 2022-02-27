@@ -384,13 +384,15 @@ form{
 }
 
 .footer i{
-    border-radius: 5px 5px 5px 5px;
-    padding: 0;
-    margin-bottom: 9px;
-    margin-right: 9px;
+    
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .footer i:hover{
+    background-color: #028090;
+    border-radius: 15px 15px 15px 15px;
     animation-name: pop;
     animation-duration: 10s;
     
